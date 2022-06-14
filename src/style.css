@@ -59,6 +59,7 @@ h1 {
 }
 .rating-card {
     background-color: var(--light-gray-magenta);
+    max-width: 20rem;
     padding: 1rem 0 1rem;
     margin: 1rem auto;
     border-radius: 5px;
@@ -82,8 +83,10 @@ h1 {
 .review-card {
     background-color: var(--dark-magenta);
     color: var(--light-gray-magenta);
+    max-width: 20rem;
+    min-height: 10rem;
     padding: 2rem;
-    margin: 2rem 1.5rem;
+    margin: 2rem auto;
     border-radius: 8px;
 }
 .rev-header {
