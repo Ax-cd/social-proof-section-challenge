@@ -21,12 +21,99 @@ body {
     font-family: 'League Spartan', sans-serif;
     font-size: calc(15rem / 16); /*15px*/
 }
+body::before {
+    content: url("./images/bg-pattern-top-mobile.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+body::after { /*DOES IT DISPLAY?*/
+    content: '';
+    background-image: url("./images/bg-pattern-bottom-mobile.svg");
+    width: 375px;
+    height: 503px;
+    position: absolute;
+    top: 100vh;
+    z-index: -1;
+}
+
+.header {
+    text-align: center;
+    margin: 5rem 1rem 1rem;
+}
+h1 {
+    color: var(--dark-magenta);
+    font-weight: 700;
+    margin: 0 4rem 1rem;
+}
+.header > p {
+    color: var(--dark-gray-magenta);
+    font-size: 500;
+    margin: 0 1.5rem;
+}
+
+.ratings {
+    text-align: center;
+    margin: 2rem 1.5rem;
+}
+.rating-card {
+    background-color: var(--light-gray-magenta);
+    padding: 1rem 0 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .stars {
     width: 6rem;
     height: 1rem;
     background-image: url("./images/icon-star.svg");
     background-repeat: space;
 }
+.ratings p {
+    color: var(--dark-magenta);
+    font-weight: 700;
+    padding-top: .8rem;
+}
+
+.review-card {
+    background-color: var(--dark-magenta);
+    color: var(--light-gray-magenta);
+    padding: 2rem;
+    margin: 2rem 1.5rem;
+    border-radius: 8px;
+}
+.rev-header {
+    display: flex;
+    align-items: center;
+}
+.reviews img {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    margin-right: 1rem;
+}
+.ids {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+.name {
+    font-weight: 700;
+}
+.buyer {
+    color: var(--pink);
+    font-weight: 500;
+}
+.review-card > p {
+    padding: 0 1.5rem 0 0;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
 .hidden {
     position: absolute;
     top: -1000px;
